@@ -1,6 +1,6 @@
 .box-comando {
    padding: 1em;
-   border: 1px solid red;
+   border-top: 1px solid #c2c2c2;
    display: flex;
 }
 
@@ -8,12 +8,14 @@
    min-width: 200px;
    font-weight: 700;
    text-align: center;
-   /* font-family: monospace; */
-
 }
 
 .descripcion {
    width: 100%;
    height: auto;
+}
 
+.agregar {
+   font-style: italic;
+   font-weight: 400;
 }
