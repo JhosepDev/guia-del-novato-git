@@ -1,0 +1,19 @@
+.box-comando {
+   padding: 1em;
+   border: 1px solid red;
+   display: flex;
+}
+
+.comando {
+   min-width: 200px;
+   font-weight: 700;
+   text-align: center;
+   /* font-family: monospace; */
+
+}
+
+.descripcion {
+   width: 100%;
+   height: auto;
+
+}
