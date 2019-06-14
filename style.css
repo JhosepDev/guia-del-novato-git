@@ -1,0 +1,41 @@
+.header {
+   width: 100%;
+   height: 300px;
+   text-align: center;
+   background-color: #c2c2c2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer {
+   width: 100%;
+   height: 100px;
+   text-align: center;
+   background-color: #c2c2c2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-comando {
+   padding: 1em;
+   border-top: 1px solid #c2c2c2;
+   display: flex;
+}
+
+.comando {
+   min-width: 200px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.descripcion {
+   width: 100%;
+   height: auto;
+}
+
+.agregar {
+   font-style: italic;
+   font-weight: 400;
+}
