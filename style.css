@@ -18,10 +18,23 @@
    align-items: center;
 }
 
+article {
+   max-width: 800px;
+   border: 2px solid #c2c2c2;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
 .box-comando {
    padding: 1em;
-   border-top: 1px solid #c2c2c2;
+   border-top: 1px solid #e7e7e7;
    display: flex;
+   transition: .3s;
+}
+
+.box-comando:hover {
+   /* background-color: #f0f0f0; */
+   box-shadow: 0 5px 15px #e4e4e4;
 }
 
 .comando {
