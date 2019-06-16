@@ -10,9 +10,11 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/f8556b4d12.js"></script>
 
    <title>Guia de Git - Para el novato comun.</title>
 </head>
@@ -34,53 +36,88 @@
                al inicio.
             </p>
 
+            <span id="mensaje"></span>
             <article>
-               <div class="box-comando">
-                  <div class="comando">
-                     pwd
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                     <div class="copy">
+                        <i class="far fa-copy"></i>
+                     </div>
+                     <input type="text" id="git-comand" class="comando" value="pwd">
+
                   </div>
+
                   <div class="descripcion">
                      Muestra la ruta de la carpeta en la que te encuentres.
                   </div>
                </div>
-   
-               <div class="box-comando">
-                  <div class="comando">
-                     mkdir
+
+               <div class="box-dato">
+                  <div class="box-comando">
+                     <div class="copy">
+                        <i class="far fa-copy"></i>
+                     </div>
+                     <div class="comando">
+                        mkdir
+                     </div>
+
                   </div>
                   <div class="descripcion">
                      Crear carpeta.
                   </div>
                </div>
-   
-               <div class="box-comando">
-                  <div class="comando">
-                     touch
+
+               <div class="box-dato">
+                  <div class="box-comando">
+                     <div class="copy">
+                        <i class="far fa-copy"></i>
+                     </div>
+                     <div class="comando">
+                        touch
+                     </div>
                   </div>
                   <div class="descripcion">
-                     Crear archivos.
+                     Crear archivos. <br>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio saepe cumque nobis
+                     doloribus dicta odit incidunt nesciunt cum quo laboriosam illo repudiandae sequi veniam nulla,
+                     quisquam temporibus tempore magnam?
                   </div>
                </div>
-   
-               <div class="box-comando">
-                  <div class="comando">
-                     ls
+
+               <div class="box-dato">
+                  <div class="box-comando">
+                     <div class="copy">
+                        <i class="far fa-copy"></i>
+                     </div>
+                     <div class="comando">
+                        ls
+                     </div>
                   </div>
                   <div class="descripcion">
                      Lista de elementos dentro de un directorio.
                   </div>
                </div>
-   
-               <div class="box-comando">
-                  <div class="comando">
-                     ls -al
+
+               <div class="box-dato">
+                  <div class="box-comando">
+                     <div class="copy">
+                        <i class="far fa-copy"></i>
+                     </div>
+                     <div class="comando">
+                        ls -al Lorem ipsum dolor sit amet consectetur
+                     </div>
                   </div>
                   <div class="descripcion">
                      Muestra todos los archivos, hasta los ocultos (-a) en forma de lista (-l).
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
                      cd
                   </div>
@@ -88,8 +125,11 @@
                      Navegar entre carpetas.
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
                      cd ..
                   </div>
@@ -97,8 +137,11 @@
                      Regresar a carpeta anterior.
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
                      cd /
                   </div>
@@ -106,8 +149,11 @@
                      Ir a la ruta principal.
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
                      cd ~
                   </div>
@@ -115,17 +161,23 @@
                      Ir a la ruta del usuario.
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
-                     history
+                     history sadasdasdasdasdasdasd
                   </div>
                   <div class="descripcion">
                      Ver ultimos comandos ejecutados.
                   </div>
                </div>
-   
-               <div class="box-comando">
+
+               <div class="box-dato">
+                  <div class="box-comando">
+
+                  </div>
                   <div class="comando">
                      ! <span class="agregar">+ numero</span>
                   </div>
@@ -160,6 +212,9 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+
+   <script src="app.js"></script>
+
 </body>
 
 </html>

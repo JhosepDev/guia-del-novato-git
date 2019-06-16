@@ -19,37 +19,106 @@
 }
 
 article {
-   max-width: 800px;
+   /* max-width: 800px; */
+   width: auto;
    border: 2px solid #c2c2c2;
    border-radius: 5px;
    overflow: hidden;
 }
 
-.box-comando {
+.box-dato {
+   height: auto;
    padding: 1em;
    border-top: 1px solid #e7e7e7;
    display: flex;
+   /* flex-wrap: wrap; */
    transition: .3s;
+   /* border: 1px solid green; */
+
 }
 
-.box-comando:hover {
+.box-dato:hover {
    /* background-color: #f0f0f0; */
    box-shadow: 0 5px 15px #e4e4e4;
 }
 
+.box-comando {
+   width: 250px;
+   height: auto;
+   display: flex;
+   /* border: 2px solid greenyellow; */
+
+}
+
+.copy {
+   height: 40px;
+   width: 40px;
+   border-radius: 3px;
+   color: #9497bd;
+   background-color: #545672;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .3s;
+   cursor: pointer;
+}
+
+.copy:hover {
+   color: #b7baec;
+   background-color: #4d4f69;
+}
+
+.copy:active {
+   transform: scale(.9);
+}
+
 .comando {
-   min-width: 200px;
+   /* min-width: 200px; */
+   width: 200px;
+
+   height: autos;
    font-weight: 700;
    text-align: center;
+   padding: 0 1em;
    font-family: 'Inconsolata', monospace;
+   /* border: 1px solid blue; */
+
 }
 
 .descripcion {
-   width: 100%;
+   /* max-width: 400px; */
+   width: auto;
    height: auto;
+   display: flex;
+   /* border: 1px solid red; */
+
 }
 
 .agregar {
    font-style: italic;
    font-weight: 400;
+}
+
+
+@media screen and (max-width: 700px) {
+
+   body {
+      /* background-color: aqua; */
+   }
+}
+
+input {
+   border: 0;
+}
+
+input:focus{
+   outline: none;
+}
+
+input::-moz-selection {
+   background-color: transparent;
+}
+
+input::selection {
+   background-color: transparent;
 }
