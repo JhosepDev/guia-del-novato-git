@@ -1,0 +1,120 @@
+
+
+.container-content {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   padding: 0 7em;
+}
+
+.section-content {
+   height: auto;
+   position: relative;
+   margin-bottom:  1em;
+   border: 1px solid $grayMedium; 
+   border-radius: $radius-box;
+   transition: all $transition;
+   box-shadow: 0px 10px 10px #f0f0f0;
+
+   h4 {
+      font-size: 1.1em;
+      color: $grayMedium;
+      padding: .9em 0 .5em 2em;
+      transition: all $transition;
+      font-weight: 700;
+
+      span {
+         width: 60px;
+         display: inline-block;
+      }
+   }
+
+   &:hover {
+      border-color: $orange; 
+
+      h4 {
+         color: $orange;
+      }
+   }
+}
+
+.content {
+   width: auto;
+   border-radius: 5px;
+   overflow: hidden;
+   position: relative;
+   opacity: 1;
+   z-index: 2;
+}
+
+ul li input[type=checkbox] {
+   position: absolute;
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   z-index: 1;
+   opacity: 0;
+}
+
+ul li input[type=checkbox]:checked ~ .content {
+   max-height: 0;
+   opacity: 0;
+   transition: all $transition;
+   transform: translate(0, -5%);
+}
+
+
+// Arrow ---------->
+
+.section-content .arrow {
+   position: absolute;
+   transform: translate(-6px, 0);
+   margin-top: 1em;
+   top: 4px;
+   right: 35px;
+
+   &:hover:after{
+      background-color: $orange;
+   }
+}
+
+.section-content .arrow:before,
+.section-content .arrow:after {
+   content: "";
+   position: absolute;
+   background-color: $grayMedium;
+   width: 6px;
+   height: 18px;
+   border-radius: 50px; 
+}
+
+.content,
+ul li .arrow:before,
+ul li .arrow:after {
+   transition: all $transition;
+}
+
+// Activo
+.section-content .arrow:before {
+   background-color: $orange;
+   transform: translate(5px, 0) rotate(135deg);
+}
+.section-content .arrow:after {
+   background-color: $orange;
+   transform: translate(-5px, 0)  rotate(-135deg);
+}
+
+// Inactivo
+.section-content input[type=checkbox]:checked ~ .arrow::before {
+   background-color: $grayMedium;
+   transform:  translate(5px, 0) rotate(45deg);
+}
+.section-content input[type=checkbox]:checked ~ .arrow::after {
+   background-color: $grayMedium;
+   transform: translate(-5px, 0) rotate(-45deg);
+}
+
+
+
+

@@ -1,29 +1,5 @@
-.header {
-   width: 100%;
-   height: 300px;
-   text-align: center;
-   background-color: #c2c2c2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.footer {
-   width: 100%;
-   height: 100px;
-   text-align: center;
-   background-color: #c2c2c2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-article {
-   /* max-width: 800px; */
-   width: auto;
-   border: 2px solid #c2c2c2;
-   border-radius: 5px;
-   overflow: hidden;
+body {
+   font-family: 'Montserrat', sans-serif;
 }
 
 .box-dato {
@@ -37,10 +13,6 @@ article {
 
 }
 
-.box-dato:hover {
-   /* background-color: #f0f0f0; */
-   box-shadow: 0 5px 15px #e4e4e4;
-}
 
 .box-comando {
    width: 250px;
@@ -50,27 +22,6 @@ article {
 
 }
 
-.copy {
-   height: 40px;
-   width: 40px;
-   border-radius: 3px;
-   color: #9497bd;
-   background-color: #545672;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transition: .3s;
-   cursor: pointer;
-}
-
-.copy:hover {
-   color: #b7baec;
-   background-color: #4d4f69;
-}
-
-.copy:active {
-   transform: scale(.9);
-}
 
 .comando {
    /* min-width: 200px; */
@@ -122,3 +73,6 @@ input::-moz-selection {
 input::selection {
    background-color: transparent;
 }
+
+
+

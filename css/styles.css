@@ -1,0 +1,213 @@
+/*--------------------------
+  Styles Sass
+---------------------------*/
+.wrapper-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100%;
+  -ms-grid-columns: 370px 1fr;
+  grid-template: 100% / 370px 1fr; }
+
+.item-grid {
+  position: relative; }
+
+.item-grid:nth-of-type(1) {
+  border-right: 1px solid #BDBDBD; }
+
+.container-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0 7em; }
+
+.section-content {
+  height: auto;
+  position: relative;
+  margin-bottom: 1em;
+  border: 1px solid #808084;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px 10px 10px #f0f0f0;
+  box-shadow: 0px 10px 10px #f0f0f0; }
+  .section-content h4 {
+    font-size: 1.1em;
+    color: #808084;
+    padding: .9em 0 .5em 2em;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 700; }
+    .section-content h4 span {
+      width: 60px;
+      display: inline-block; }
+  .section-content:hover {
+    border-color: #FA5D55; }
+    .section-content:hover h4 {
+      color: #FA5D55; }
+
+.content {
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  z-index: 2; }
+
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  opacity: 0; }
+
+ul li input[type=checkbox]:checked ~ .content {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate(0, -5%);
+  -ms-transform: translate(0, -5%);
+  transform: translate(0, -5%); }
+
+.section-content .arrow {
+  position: absolute;
+  -webkit-transform: translate(-6px, 0);
+  -ms-transform: translate(-6px, 0);
+  transform: translate(-6px, 0);
+  margin-top: 1em;
+  top: 4px;
+  right: 35px; }
+  .section-content .arrow:hover:after {
+    background-color: #FA5D55; }
+
+.section-content .arrow:before,
+.section-content .arrow:after {
+  content: "";
+  position: absolute;
+  background-color: #808084;
+  width: 6px;
+  height: 18px;
+  border-radius: 50px; }
+
+.content,
+ul li .arrow:before,
+ul li .arrow:after {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.section-content .arrow:before {
+  background-color: #FA5D55;
+  -webkit-transform: translate(5px, 0) rotate(135deg);
+  -ms-transform: translate(5px, 0) rotate(135deg);
+  transform: translate(5px, 0) rotate(135deg); }
+
+.section-content .arrow:after {
+  background-color: #FA5D55;
+  -webkit-transform: translate(-5px, 0) rotate(-135deg);
+  -ms-transform: translate(-5px, 0) rotate(-135deg);
+  transform: translate(-5px, 0) rotate(-135deg); }
+
+.section-content input[type=checkbox]:checked ~ .arrow::before {
+  background-color: #808084;
+  -webkit-transform: translate(5px, 0) rotate(45deg);
+  -ms-transform: translate(5px, 0) rotate(45deg);
+  transform: translate(5px, 0) rotate(45deg); }
+
+.section-content input[type=checkbox]:checked ~ .arrow::after {
+  background-color: #808084;
+  -webkit-transform: translate(-5px, 0) rotate(-45deg);
+  -ms-transform: translate(-5px, 0) rotate(-45deg);
+  transform: translate(-5px, 0) rotate(-45deg); }
+
+.menu {
+  width: 370px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-left: 5em;
+  padding-top: 5em; }
+  .menu ul li {
+    height: 60px; }
+  .menu ul li a {
+    width: 100%;
+    height: 100%;
+    font-size: .8em;
+    color: #BDBDBD;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .menu ul li a:hover {
+      font-size: 1em;
+      font-weight: 700;
+      color: #808084;
+      border-right: 6px solid #FA5D55; }
+
+.header {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.documentation-git {
+  position: absolute;
+  top: 2em;
+  right: 0;
+  background-color: #00CA7C;
+  padding: 1em 3em;
+  font-weight: 700;
+  color: #3F4450;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.container-title {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container-title h1 {
+    font-size: 5em;
+    font-weight: 700;
+    color: #3F4450;
+    letter-spacing: -4px;
+    margin: 0; }
+  .container-title p {
+    font-size: 1.5em;
+    margin: 0; }
+
+.icon-github {
+  margin-right: 1.5em; }
+  .icon-github img {
+    width: 200px; }
+
+.git-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .git-logo img {
+    position: absolute;
+    top: -20px;
+    right: -130px; }

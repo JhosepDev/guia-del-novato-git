@@ -12,8 +12,10 @@
 
 
    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/styles.css">
    <script src="https://kit.fontawesome.com/f8556b4d12.js"></script>
 
    <title>Guia de Git - Para el novato comun.</title>
@@ -21,179 +23,582 @@
 
 <body>
 
-   <header class="header">
-      <h1>La guía básica de Git para el novato que llevas dentro.</h1>
+   <div class="wrapper-grid">
 
-   </header>
 
-   <div class="container mt-5">
-      <div class="row">
-         <div class="col">
+      <div class="item-grid ">
 
-            <h4>Comandos basicos de la consola:</h4>
-            <p class="mb-4">
-               Estos comando son los que se utilizan reularmente en consola. Y no necesitan la palabra Git
-               al inicio.
-            </p>
+         <nav class="menu">
+            <h3>Indice</h3>
 
-            <span id="mensaje"></span>
-            <article>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                     <div class="copy">
-                        <i class="far fa-copy"></i>
-                     </div>
-                     <input type="text" id="git-comand" class="comando" value="pwd">
-
-                  </div>
-
-                  <div class="descripcion">
-                     Muestra la ruta de la carpeta en la que te encuentres.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-                     <div class="copy">
-                        <i class="far fa-copy"></i>
-                     </div>
-                     <div class="comando">
-                        mkdir
-                     </div>
-
-                  </div>
-                  <div class="descripcion">
-                     Crear carpeta.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-                     <div class="copy">
-                        <i class="far fa-copy"></i>
-                     </div>
-                     <div class="comando">
-                        touch
-                     </div>
-                  </div>
-                  <div class="descripcion">
-                     Crear archivos. <br>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio saepe cumque nobis
-                     doloribus dicta odit incidunt nesciunt cum quo laboriosam illo repudiandae sequi veniam nulla,
-                     quisquam temporibus tempore magnam?
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-                     <div class="copy">
-                        <i class="far fa-copy"></i>
-                     </div>
-                     <div class="comando">
-                        ls
-                     </div>
-                  </div>
-                  <div class="descripcion">
-                     Lista de elementos dentro de un directorio.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-                     <div class="copy">
-                        <i class="far fa-copy"></i>
-                     </div>
-                     <div class="comando">
-                        ls -al Lorem ipsum dolor sit amet consectetur
-                     </div>
-                  </div>
-                  <div class="descripcion">
-                     Muestra todos los archivos, hasta los ocultos (-a) en forma de lista (-l).
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     cd
-                  </div>
-                  <div class="descripcion">
-                     Navegar entre carpetas.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     cd ..
-                  </div>
-                  <div class="descripcion">
-                     Regresar a carpeta anterior.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     cd /
-                  </div>
-                  <div class="descripcion">
-                     Ir a la ruta principal.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     cd ~
-                  </div>
-                  <div class="descripcion">
-                     Ir a la ruta del usuario.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     history sadasdasdasdasdasdasd
-                  </div>
-                  <div class="descripcion">
-                     Ver ultimos comandos ejecutados.
-                  </div>
-               </div>
-
-               <div class="box-dato">
-                  <div class="box-comando">
-
-                  </div>
-                  <div class="comando">
-                     ! <span class="agregar">+ numero</span>
-                  </div>
-                  <div class="descripcion">
-                     Ejecuta el comando con el numero correspondiente de la lista de history.
-                  </div>
-               </div>
-            </article>
-
-         </div>
+            <ul>
+               <li><a href=""><span class="mr-3">01.</span> Comandos Básicos</a></li>
+               <li><a href=""><span class="mr-3">02.</span> Iniciar un repositorio</a></li>
+               <li><a href=""><span class="mr-3">03.</span> git rm</a></li>
+               <li><a href=""><span class="mr-3">04.</span> git commit</a></li>
+               <li><a href=""><span class="mr-3">05.</span> git log</a></li>
+               <li><a href=""><span class="mr-3">06.</span> git branch</a></li>
+               <li><a href=""><span class="mr-3">07.</span> git pull/push</a></li>
+               <li><a href=""><span class="mr-3">08.</span> git remote</a></li>
+               <li><a href=""><span class="mr-3">09.</span> git clean</a></li>
+               <li><a href=""><span class="mr-3">10.</span> git stash</a></li>
+            </ul>
+         </nav>
       </div>
+
+
+      <div class="item-grid">
+
+
+         <header class="header container">
+
+            <a href="https://git-scm.com/doc" target="_blank">
+               <div class="documentation-git">
+                  <div class="button-doc">GIT-SCM.COM</div>
+               </div>
+            </a>
+
+
+            <div class="container-title">
+
+               <div class="icon-github">
+                  <img src="/src/icon-github2x.png" alt="Icono Github">
+               </div>
+
+               <div>
+                  <div class="git-logo">
+                     <h1>Comandos</h1>
+                     <img src="/src/git-logo.png" alt="GIT">
+                  </div>
+
+                  <p>La guía básica para el programador <br>
+                     olvidadizo.</p>
+               </div>
+            </div>
+
+         </header>
+
+
+         <div class="container mt-5">
+            <div class="row">
+               <div class="col">
+
+
+                  <ul class="container-content">
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-2">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+                     <li class="section-content">
+                        <input type="checkbox" checked>
+                        <div class="arrow"></div>
+                        <h4> <span class="mr-5">1.</span> Comandos Básicos</h4>
+
+                        <div class="content">
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+
+                           <!-- Comando -->
+                           <div class="box-dato">
+                              <div class="box-comando">
+                                 <span class="comando">pwd</span>
+                              </div>
+                              <div class="descripcion">
+                                 <p>
+                                    Muestra la ruta de la carpeta en la que te encuentres.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- /Comando -->
+                        </div>
+
+                     </li>
+
+                  </ul>
+
+
+               </div>
+            </div>
+         </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
    </div>
 
-   <footer class="footer mt-5">
-      Esto es hecho por mi para el mundo.
-   </footer>
+
 
 
 
