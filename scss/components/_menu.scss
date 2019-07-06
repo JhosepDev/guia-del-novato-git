@@ -7,14 +7,13 @@
    top: 0;
    left: 0;
    z-index: 100;
+   overflow: auto;
    padding-left: 5em;
-   // background-color: aqua;
+   background-color: $white;
    padding-top: 5em;
 
    ul li {
       height: 60px;
-      // border: $prueba;
-      
    }
 
    ul li a {

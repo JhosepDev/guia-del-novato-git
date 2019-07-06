@@ -1,0 +1,76 @@
+/*--------------------------
+  Layout > Base/Tipografia
+---------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: $grayWhite;  
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: $grayLight;
+ }
+
+ body::-webkit-scrollbar-thumb {
+  background: $grayMedium;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*---------------
+  $TIPOGRAFIA
+----------------*/
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+// h1 {
+//   font-size: 1em;
+// }
+
+// h2 {
+//   font-size: 1em;
+// }
+
+// h3 {
+//   font-size: 1em;  
+// }
+
+// h4 { 
+//   font-size: 1em;  
+// }
+
+// p {
+//   font-size: 1em;  
+// }
+
+
+
+
+/*-------------------------
+  Media Queri
+---------------------------*/
+
+

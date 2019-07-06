@@ -9,12 +9,27 @@
 
 .item-grid:nth-of-type(1) {
    border-right: 1px solid $grayLight;
-   // border: 1px solid red;
    // background-color: #ffd0bb;
 }
 
 .item-grid:nth-of-type(2) {
-   // border: 1px solid blue;
+   // padding: 0 15em;
    // background-color: #cabbff;
 
+}
+
+
+.container {
+   // padding: 0 8em;
+   // border: $prueba;
+
+   .row {
+   // border: 3px solid blue;
+
+   }
+
+   .col {
+   // border: $prueba;
+
+   }
 }
