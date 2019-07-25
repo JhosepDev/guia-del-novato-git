@@ -1,0 +1,32 @@
+
+
+
+
+.box-dato {
+   height: auto;
+   padding: 1em;
+   border-top: 1px solid #e7e7e7;
+   display: flex;
+   transition: .3s;
+}
+
+.box-comando {
+   width: 200px;
+   height: auto;
+   display: flex;
+}
+
+.comando {
+   width: 200px;
+   height: autos;
+   font-weight: 700;
+   text-align: center;
+   padding: 0 1em;
+   font-family: 'Inconsolata', monospace;
+}
+
+.descripcion {
+   width: auto;
+   height: auto;
+   display: flex;
+}

@@ -11,24 +11,26 @@
 .documentation-git {
    display: inline-block;
    background-color: $green;
-   padding: .7em 1.5em;
+   padding: 1em 2em;
    font-weight: 700;
    color: $grayDark;
    border-radius: 3px;
    cursor: pointer;
+   font-size: .9em;
 }
 
 .container-title {
    height: 200px;
-   // border: $prueba;
    position: relative;
    left: 0;
-   align-items: center;
    display: flex;
-   // transform: scale(.5);
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   // border: $prueba;
 
    h1 {
-      font-size: 5em;
+      font-size: 3.5em;
       font-weight: 700;
       color: $grayDark;
       letter-spacing: -4px;
@@ -36,7 +38,7 @@
    }
 
    p {
-      font-size: 1.5em;
+      font-size: 1.4em;
       margin: 0;
    }
 }
@@ -45,18 +47,16 @@
    margin-right: 1.5em;
 
    img {
-      width: 60px;
+      width: 55px;
    }
 }
 
-.git-logo {
+.title {
    display: flex;
-   // position: relative;
 
-   img {
+   .git-logo img {
+      width: 80px;
       margin-left: 1em;
-      // position: absolute;
-      // top: -20px;
-      // right: -130px;
    }
+
 }

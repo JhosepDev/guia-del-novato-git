@@ -11,6 +11,7 @@
    padding-left: 5em;
    background-color: $white;
    padding-top: 5em;
+   // border: $prueba;
 
    ul li {
       height: 60px;
@@ -26,10 +27,22 @@
       transition: $transition;
 
       &:hover {
-         font-size: 1em;
+         font-size: .9em;
          font-weight: 700;
          color: $grayMedium;
          border-right: 6px solid $orange;
       }
    }
+}
+
+
+.advertencia {
+   position: absolute;
+   bottom: 0;
+   z-index: 150;
+   padding: 2.8em;
+   font-size: .8em;
+   font-weight: 700;
+   color: white;
+   background-color: $orange;
 }

@@ -1,7 +1,8 @@
 
 
 .container-content {
-   max-width: 800px;
+   width: 800px;
+   // max-width: 800px;
    list-style: none;
    padding: 0;
    margin: 0;
@@ -96,25 +97,27 @@ ul li .arrow:after {
    transition: all $transition;
 }
 
-// Activo
-.section-content .arrow:before {
-   background-color: $orange;
-   transform: translate(5px, 0) rotate(135deg);
-}
-.section-content .arrow:after {
-   background-color: $orange;
-   transform: translate(-5px, 0)  rotate(-135deg);
-}
-
 // Inactivo
 .section-content input[type=checkbox]:checked ~ .arrow::before {
    background-color: $grayMedium;
-   transform:  translate(5px, 0) rotate(45deg);
+   transform:  translate(-5px, 0) rotate(-45deg);
 }
 .section-content input[type=checkbox]:checked ~ .arrow::after {
    background-color: $grayMedium;
-   transform: translate(-5px, 0) rotate(-45deg);
+   transform: translate(5px, 0) rotate(45deg);
 }
+
+// Activo
+.section-content .arrow:before {
+   background-color: $orange;
+   transform: translate(5px, 0) rotate(-45deg);
+}
+.section-content .arrow:after {
+   background-color: $orange;
+   transform: translate(-5px, 0)  rotate(45deg);
+}
+
+
 
 
 

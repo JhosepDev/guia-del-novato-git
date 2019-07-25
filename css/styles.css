@@ -52,10 +52,11 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative; }
 
 .item-grid:nth-of-type(1) {
-  border-right: 1px solid #BDBDBD; }
+  border-right: 1px solid #BDBDBD;
+  height: 100vh; }
 
 .container-content {
-  max-width: 800px;
+  width: 800px;
   list-style: none;
   padding: 0;
   margin: 0; }
@@ -142,29 +143,29 @@ ul li .arrow:after {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-.section-content .arrow:before {
-  background-color: #FA5D55;
-  -webkit-transform: translate(5px, 0) rotate(135deg);
-  -ms-transform: translate(5px, 0) rotate(135deg);
-  transform: translate(5px, 0) rotate(135deg); }
-
-.section-content .arrow:after {
-  background-color: #FA5D55;
-  -webkit-transform: translate(-5px, 0) rotate(-135deg);
-  -ms-transform: translate(-5px, 0) rotate(-135deg);
-  transform: translate(-5px, 0) rotate(-135deg); }
-
 .section-content input[type=checkbox]:checked ~ .arrow::before {
+  background-color: #808084;
+  -webkit-transform: translate(-5px, 0) rotate(-45deg);
+  -ms-transform: translate(-5px, 0) rotate(-45deg);
+  transform: translate(-5px, 0) rotate(-45deg); }
+
+.section-content input[type=checkbox]:checked ~ .arrow::after {
   background-color: #808084;
   -webkit-transform: translate(5px, 0) rotate(45deg);
   -ms-transform: translate(5px, 0) rotate(45deg);
   transform: translate(5px, 0) rotate(45deg); }
 
-.section-content input[type=checkbox]:checked ~ .arrow::after {
-  background-color: #808084;
-  -webkit-transform: translate(-5px, 0) rotate(-45deg);
-  -ms-transform: translate(-5px, 0) rotate(-45deg);
-  transform: translate(-5px, 0) rotate(-45deg); }
+.section-content .arrow:before {
+  background-color: #FA5D55;
+  -webkit-transform: translate(5px, 0) rotate(-45deg);
+  -ms-transform: translate(5px, 0) rotate(-45deg);
+  transform: translate(5px, 0) rotate(-45deg); }
+
+.section-content .arrow:after {
+  background-color: #FA5D55;
+  -webkit-transform: translate(-5px, 0) rotate(45deg);
+  -ms-transform: translate(-5px, 0) rotate(45deg);
+  transform: translate(-5px, 0) rotate(45deg); }
 
 .menu {
   width: 370px;
@@ -194,10 +195,20 @@ ul li .arrow:after {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .menu ul li a:hover {
-      font-size: 1em;
+      font-size: .9em;
       font-weight: 700;
       color: #808084;
       border-right: 6px solid #FA5D55; }
+
+.advertencia {
+  position: absolute;
+  bottom: 0;
+  z-index: 150;
+  padding: 2.8em;
+  font-size: .8em;
+  font-weight: 700;
+  color: white;
+  background-color: #FA5D55; }
 
 .header {
   width: 100%;
@@ -218,40 +229,79 @@ ul li .arrow:after {
 .documentation-git {
   display: inline-block;
   background-color: #00CA7C;
-  padding: .7em 1.5em;
+  padding: 1em 2em;
   font-weight: 700;
   color: #3F4450;
   border-radius: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: .9em; }
 
 .container-title {
   height: 200px;
   position: relative;
   left: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .container-title h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: 700;
     color: #3F4450;
     letter-spacing: -4px;
     margin: 0; }
   .container-title p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0; }
 
 .icon-github {
   margin-right: 1.5em; }
   .icon-github img {
-    width: 60px; }
+    width: 55px; }
 
-.git-logo {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .git-logo img {
+  .title .git-logo img {
+    width: 80px;
     margin-left: 1em; }
+
+.box-dato {
+  height: auto;
+  padding: 1em;
+  border-top: 1px solid #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.box-comando {
+  width: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comando {
+  width: 200px;
+  height: autos;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 1em;
+  font-family: 'Inconsolata', monospace; }
+
+.descripcion {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

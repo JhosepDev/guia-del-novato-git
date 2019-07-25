@@ -2,16 +2,6 @@ body {
    font-family: 'Montserrat', sans-serif;
 }
 
-.box-dato {
-   height: auto;
-   padding: 1em;
-   border-top: 1px solid #e7e7e7;
-   display: flex;
-   /* flex-wrap: wrap; */
-   transition: .3s;
-   /* border: 1px solid green; */
-
-}
 
 ul {
    list-style: none;
@@ -20,37 +10,6 @@ ul {
 }
 
 
-
-.box-comando {
-   width: 250px;
-   height: auto;
-   display: flex;
-   /* border: 2px solid greenyellow; */
-
-}
-
-
-.comando {
-   /* min-width: 200px; */
-   width: 200px;
-
-   height: autos;
-   font-weight: 700;
-   text-align: center;
-   padding: 0 1em;
-   font-family: 'Inconsolata', monospace;
-   /* border: 1px solid blue; */
-
-}
-
-.descripcion {
-   /* max-width: 400px; */
-   width: auto;
-   height: auto;
-   display: flex;
-   /* border: 1px solid red; */
-
-}
 
 .agregar {
    font-style: italic;
